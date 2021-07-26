@@ -6,7 +6,7 @@ class SenhaInvalidaException extends \DomainException
 {
     public function __construct()
     {
-        $mensagem = "A senha deve ter 8 caracteres." . PHP_EOL;
+        $mensagem = "A senha deve ter mais de 8 caracteres." . PHP_EOL;
         parent::__construct($mensagem);
     }
 
