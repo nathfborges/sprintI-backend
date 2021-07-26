@@ -16,7 +16,7 @@ class Cadastro
             $usuario->setSenha($senha);
             $mensagem = "Seu cadastro foi efetuado com sucesso. :)" . PHP_EOL;
          } catch (SenhaInvalidaException $exception) {
-             $mensagem = $exception->getMessage() . "ERROU!!!!!!!!!" . PHP_EOL;
+             $mensagem = $exception->getMessage() . "Erro de cadastro." . PHP_EOL;
          } finally {
              echo $mensagem;
          }
